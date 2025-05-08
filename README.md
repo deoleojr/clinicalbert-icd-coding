@@ -128,4 +128,4 @@ Distributed under the MIT License.
 ## Contact
 
 [Emmanuel Leonce] - [deoleojr016@gmail.com] - [(https://www.linkedin.com/in/emmanuel-leonce-963bbb247/)]
-Project Link: [Link to this GitHub repository]
+Project Link: [https://github.com/deoleojr/clinicalbert-icd-coding]
