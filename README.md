@@ -66,8 +66,8 @@ Several models were implemented and compared for this multi-label text classific
 
 1.  **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)[YourUsername]/[YourRepoName].git
-   cd [YourRepoName]
+   git clone [https://github.com/](https://github.com/)[deoleojr]/[clinicalbert-icd-coding].git
+   cd [clinicalbert-icd-coding]
    ```
 2.  **Set up Environment:** It's recommended to use a virtual environment (like `conda` or `venv`).
    ```bash
@@ -79,15 +79,16 @@ Several models were implemented and compared for this multi-label text classific
    ```bash
    pip install -r requirements.txt
    ```
-   *(Make sure to create a `requirements.txt` file with necessary libraries like: pandas, numpy, scikit-learn, tensorflow, transformers, torch [if needed for HF backend], matplotlib, tqdm)*
+  
 
-4.  **Dataset:** Obtain access to MIMIC-III v1.4 via PhysioNet and place the relevant `.csv.gz` files (e.g., `ADMISSIONS.csv.gz`, `DIAGNOSES_ICD.csv.gz`, `NOTEEVENTS.csv.gz`) in an accessible location (e.g., a `data/mimic_iii/` directory - **ensure this data is NOT committed to Git**). Update data paths in scripts if necessary.
+4.  **Dataset:** Obtain access to MIMIC-III v1.4 via PhysioNet and place the relevant `.csv.gz` files (e.g., `ADMISSIONS.csv.gz`, `DIAGNOSES_ICD.csv.gz`, `NOTEEVENTS.csv.gz`) in an accessible location  a `data/mimic_iii/` directory
+  
 
 ## Usage
 
 1.  **Data Preparation:** Run the data cleaning and preprocessing script (e.g., `python src/data/preprocess_mimic.py`) to generate the `merged_df` containing cleaned text and ICD code lists. (Ensure the output path is specified or the resulting DataFrame is available).
 2.  **Model Training & Evaluation:**
-   * Navigate to the relevant script (e.g., `src/models/train_logreg.py`, `src/models/train_bert_finetune.py`).
+   * Navigate to the relevant script  `src/models/train_logreg.py`, `src/models/train_bert_finetune.py`.
    * Adjust configuration parameters (like `EPOCHS`, `BATCH_SIZE`, `LEARNING_RATE`) within the script if needed.
    * Run the script: `python src/models/train_bert_finetune.py`
    * The script will typically perform data loading (using the preprocessed data), model building, training, evaluation, and generate results/plots.
