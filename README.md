@@ -93,8 +93,6 @@ Several models were implemented and compared for this multi-label text classific
    * Run the script: `python src/models/train_bert_finetune.py`
    * The script will typically perform data loading (using the preprocessed data), model building, training, evaluation, and generate results/plots.
 
-*(Note: Adapt script names and paths based on your actual project structure)*
-
 ## Visualizations
 
 The scripts include code to generate visualizations to aid analysis:
